@@ -1,0 +1,195 @@
+body {
+   padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+   background-image:url("i.jpg");
+　min-height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+ 　margin: 0;
+}
+
+.search{
+	position: relative; /* 今の位置を基準 */
+	top: 50px; /* 上から10px */
+	left: 15%; /* 左から20px */
+	
+    float:left;
+}
+.kensaku{
+
+}
+
+.honbun {
+    margin-top: 30px;
+    margin-bottom: 12px;
+
+}
+.label{
+    vertical-align: top;
+    margin-right: 5px;
+}
+.note{
+    border-top: 1px solid;
+    margin: 40px auto;
+    width : 45%;
+    height : 80%;
+    float: center;
+    background-color:white;
+    overflow-y: scroll;
+    position: relative; /* 今の位置を基準 */
+    bottom:2%;
+
+border: solid 2px #999; /*外枠の設定*/
+   padding: 0 2em;
+
+
+}
+
+.note li {
+   border-bottom: dashed 1px #ccc; /*罫線の設定*/
+   line-height: 1.5;
+   padding: 0.5em 0 0.5em 1.5em;
+   margin:0;
+   list-style-type:none;
+font-size:120%;
+}
+
+.note li:last-of-type {
+   border-bottom: none;
+}
+
+/*ドットの設定*/
+.note::before {
+   content: "";
+   position: absolute;
+   
+   height:90%;
+   top:0.5em;
+   left:0.5em;
+}
+
+/*チェックアイコンの設定*/
+.note li::after {
+   font-family: FontAwesome;
+   
+   color: #fdbf64; /*色の設定*/
+   position: absolute;
+   left : 2em;
+}
+
+p
+{
+	font-size: 120%;
+}
+h2
+{
+font-size: 170%;
+text-align:center;
+color:lavenderblush;
+
+}
+
+.suuzi{
+ font-size: 150%;
+margin: 5% 0;
+}
+
+.namae{
+  font-size: 150%;
+}
+
+/*投稿ボタン*/
+.button {
+  display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 15pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : #4da6ff;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #ffffff;    /* 枠の指定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  color         : #ffffff;     /* 背景色     */
+  background    : #4da6ff;     /* 文字色     */
+}
+
+/*メニュー*/
+nav{
+border-top: 1px solid #ccc;
+border-bottom: 1px solid #ccc;
+}
+nav ul{
+display: table;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+text-align: center;
+background-color:snow;
+}
+nav ul li{
+display: table-cell;
+min-width: 50px;
+border-right: 1px solid #ccc;
+}
+nav ul li:first-child{
+border-left: 1px solid #ccc;
+}
+nav ul li a{
+display: block;
+width: 100%;
+padding: 10px 0;
+text-decoration: none;
+color: black;
+}
+nav ul li a:hover{
+background-color:white;
+border-bottom: 5px solid black;
+}
+nav ul li.current{
+font-weight: bold;
+}
+nav ul li.current a{
+border-bottom: 5px solid black;
+color:black;
+}
+
+
+
+.main
+{
+	position: relative; /* 今の位置を基準 */
+	top: 80px; /* 上から10px */
+	left: 50px; /* 左から20px */
+    float:left;
+	color: white; 
+	width: 20%;  /* 横幅 */
+	height: 20%; /* 高さ */
+	text-align:center;
+}
+
+/*入力フォームの本文*/
+textarea {
+	width: 100%;  /* 横幅 */
+	height: 200%; /* 高さ */
+margin-left: 5px;
+}
+
+/*ヘッダー*/
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    background: white; /* 背景色にグレーを指定 */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
